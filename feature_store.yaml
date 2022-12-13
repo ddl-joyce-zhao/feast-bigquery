@@ -3,3 +3,4 @@ registry: data/registry.db
 provider: gcp
 offline_store:
     type: bigquery
+entity_key_serialization_version: 2
