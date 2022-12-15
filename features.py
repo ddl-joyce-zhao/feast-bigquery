@@ -4,7 +4,7 @@ from feast import BigQuerySource, Entity, Feature, FeatureView, Field
 from feast.types import Float32, Int64, String
 
 trips_source = BigQuerySource(
-    table="qe-project-340220.testDataset.yellow_cab",
+    table="qe-project-340220:testDataset.yellow_cab",
     timestamp_field="dropoff_datetime",
     created_timestamp_column="pickup_datetime",
 )
