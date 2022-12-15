@@ -5,23 +5,24 @@ from feast.types import Float32, Int64, String
 
 driver_locations_source = BigQuerySource(
     table="qe-project-340220.testDataset.yellow_cab",
-    timestamp_field="event_timestamp",
-    created_timestamp_column="created_timestamp",
+    timestamp_field="dropoff_datetime",
+    created_timestamp_column="pickup_datetime",
 )
 
-driver = Entity(
-    name="driver",
-    description="driver id",
+trip = Entity(
+    name="yellow_cab",
+    description="trip",
 )
 
-driver_locations = FeatureView(
-    name="driver_locations",
-    entities=[driver],
+trip_costs = FeatureView(
+    name="trip_costs",
+    entities=[trip],
     ttl=timedelta(days=1),
     schema=[
-        Field(name="lat", dtype=Float32),
-        Field(name="lon", dtype=String),
-        Field(name="driver", dtype=Int64),
+        Field(name="fare_amount", dtype=Float32),
+        Field(name="extra", dtype=Float32),
+        Field(name="tip_amount", dtype=Float32),
+        Field(name="tolls_amount", dtype=Float32),
     ],
     source=driver_locations_source,
 )
