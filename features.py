@@ -3,20 +3,20 @@ from datetime import timedelta
 from feast import BigQuerySource, Entity, Feature, FeatureView, Field
 from feast.types import Float32, Int64, String
 
-driver_locations_source = BigQuerySource(
+trips_source = BigQuerySource(
     table="qe-project-340220.testDataset.yellow_cab",
     timestamp_field="dropoff_datetime",
     created_timestamp_column="pickup_datetime",
 )
 
-trip = Entity(
+trips = Entity(
     name="yellow_cab",
-    description="trip",
+    description="trips",
 )
 
 trip_costs = FeatureView(
     name="trip_costs",
-    entities=[trip],
+    entities=[trips],
     ttl=timedelta(days=1),
     schema=[
         Field(name="fare_amount", dtype=Float32),
@@ -24,5 +24,5 @@ trip_costs = FeatureView(
         Field(name="tip_amount", dtype=Float32),
         Field(name="tolls_amount", dtype=Float32),
     ],
-    source=driver_locations_source,
+    source=trips_source,
 )
