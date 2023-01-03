@@ -11,7 +11,7 @@ trips_source = BigQuerySource(
 
 trips = Entity(
     name="yellow_cab",
-    description="trips",
+    description="trips_2",
 )
 
 trip_costs = FeatureView(
