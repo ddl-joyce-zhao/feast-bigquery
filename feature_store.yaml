@@ -3,4 +3,7 @@ registry: data/registry.db
 provider: local
 offline_store:
     type: bigquery
+online_store:
+  type: datastore
+  project_id: qe-project-340220
 entity_key_serialization_version: 2
