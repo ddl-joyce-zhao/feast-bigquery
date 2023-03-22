@@ -11,7 +11,7 @@ trips_source = BigQuerySource(
 
 trip = Entity(
     name="yellow_cab",
-    join_keys=["PU_LOCATION_ID", "DO_LOCATION_ID"]
+    join_keys=["PU_LOCATION_ID"],
     description="yellow cab trip",
 )
 
