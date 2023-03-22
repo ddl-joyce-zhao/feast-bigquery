@@ -9,14 +9,15 @@ trips_source = BigQuerySource(
     created_timestamp_column="pickup_datetime",
 )
 
-trips = Entity(
+trip = Entity(
     name="yellow_cab",
-    description="trips_1",
+    join_keys=["PU_LOCATION_ID", "DO_LOCATION_ID"]
+    description="yellow cab trip",
 )
 
 trip_costs = FeatureView(
     name="trip_costs",
-    entities=[trips],
+    entities=[trip],
     ttl=timedelta(days=1),
     schema=[
         Field(name="fare_amount", dtype=Float32, tags={"production": "true"}),
