@@ -1,26 +1,36 @@
 
-O
+M
 /
 
 yellow_cabtrips_1"
-yellow_cabJdomino_feast
-Í¹ì Ø°­¼Í¹ì Ø°­¼
-C
+yellow_cabJdomino_feast
+‹¾ì ĞŞ‹9‹¾ì ĞŞ‹9
+A
 #
 __dummy"
-__dummy_idJdomino_feast
-Í¹ì Ğñ´¼Í¹ì ¨–»¼1"$e8a67ae4-30f8-4196-9443-81500966e921*Î¹ì ˆ´i2¢
-ƒ
+__dummy_idJdomino_feast
+‹¾ì Ø¬ÿ8‹¾ì Øí“91"$74a32483-2669-49a2-9064-70b03a635445*‹¾ì à“’›2 
+
 
 trip_costsdomino_feast
-yellow_cab"
-fare_amount"	
-extra"
+yellow_cab"#
+fare_amount
 
-tip_amount"
-tolls_amount2€£:”dropoff_datetime*pickup_datetimeb
-testDataset.yellow_cabŠ9feast.infra.offline_stores.bigquery_source.BigQuerySource¢testDataset.yellow_cab@
-Ô§òœØ«º]Ô§òœØ«º]Rt
+productiontrue"
+extra
+
+productionfalse""
+
+tip_amount
+
+productiontrue"$
+tolls_amount
+
+productiontrue*
+
+productiontrue2€£:”dropoff_datetime*pickup_datetimeb
+testDataset.yellow_cabŠ9feast.infra.offline_stores.bigquery_source.BigQuerySource¢testDataset.yellow_cab@Rtrip costs feature view
+‹¾ì ëõ7‹¾ì ëõ7Rt
 r
 ,feast.infra.online_stores.sqlite.SqliteTable"B
 '/features/feast-bigquery/data/online.dbdomino_feast_trip_costsb£dropoff_datetime*pickup_datetimeb
