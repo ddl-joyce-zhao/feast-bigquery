@@ -3,13 +3,13 @@
 ;
 
 yellow_cabyellow cab trip"PU_LOCATION_IDJdomino_feast
-ÏÜñ ı€ÙÏÜñ ı€Ù
+ƒáñ °÷¡Úƒáñ °÷¡Ú
 C
 #
 __dummy"
 __dummy_idJdomino_feast
-ÏÜñ €…ÙÏÜñ Ğÿ”Ù1"$9f263586-0c06-4c38-a159-c6bbdff590d8*ÏÜñ À£ë€2¢
-
+ƒáñ  Ç—Úƒáñ °ÜªÚ1"$604adc20-246c-42f5-9643-64573180fd70*„áñ Ø¬õe2£
+‚
 
 trip_costsdomino_feast
 yellow_cab"#
@@ -18,17 +18,17 @@ yellow_cab"#
 productiontrue"
 extra
 
-productionfalse""
+productionfalse"#
 
-tip_amount
+tip_amount
 
-productiontrue"$
+productionfalse"$
 tolls_amount
 
 productiontrue*
 
 productiontrue2€£:”dropoff_datetime*pickup_datetimeb
 testDataset.yellow_cabŠ9feast.infra.offline_stores.bigquery_source.BigQuerySource¢testDataset.yellow_cab@Rtrip costs feature view
-ÏÜñ àìáØÏÜñ àìáØb£dropoff_datetime*pickup_datetimeb
+ƒáñ øÆÙØƒáñ øÆÙØb£dropoff_datetime*pickup_datetimeb
 testDataset.yellow_cabŠ9feast.infra.offline_stores.bigquery_source.BigQuerySource¢testDataset.yellow_cabªdomino_feastz4
 domino_feast$e472733c-0629-484f-82a7-7fd635eab94b
