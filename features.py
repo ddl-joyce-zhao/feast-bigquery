@@ -22,7 +22,7 @@ trip_costs = FeatureView(
     schema=[
         Field(name="fare_amount", dtype=Float32, tags={"production": "true"}),
         Field(name="extra", dtype=Float32, tags={"production": "false"}),
-        Field(name="tip_amount", dtype=Float32, tags={"production": "true"}),
+        Field(name="tip_amount", dtype=Float32, tags={"production": "false"}),
         Field(name="tolls_amount", dtype=Float32, tags={"production": "true"}),
     ],
     source=trips_source,
