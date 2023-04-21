@@ -4,5 +4,7 @@ provider: local
 offline_store:
     type: bigquery
 online_store:
-    type: datastore
+    type: bigtable
+    project_id: test-project
+    instance: test
 entity_key_serialization_version: 2
