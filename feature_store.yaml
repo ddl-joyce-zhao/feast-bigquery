@@ -3,8 +3,8 @@ registry: data/registry.db
 provider: local
 offline_store:
     type: bigquery
-online_store:
-    type: bigtable
     project_id: test-project
-    instance: test
+online_store:
+    type: datastore
+    project_id: test-project
 entity_key_serialization_version: 2
