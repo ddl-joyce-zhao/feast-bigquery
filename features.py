@@ -15,6 +15,7 @@ trip = Entity(
     description="yellow cab trip3",
 )
 
+# Create trip costs feature view
 trip_costs = FeatureView(
     name="trip_costs",
     entities=[trip],
